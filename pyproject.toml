@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "campaign-sim"
+version = "0.1.0"
+description = "Synthetic paid-media campaign simulator and experimentation harness with validated sequential monitoring"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = ["numpy>=1.21", "scipy>=1.7", "matplotlib>=3.4"]
+
+[tool.setuptools.packages.find]
+include = ["campaign_sim*"]
